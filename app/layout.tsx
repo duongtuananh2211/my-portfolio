@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link href="/avatar.jpg" as="image" rel="preload" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
