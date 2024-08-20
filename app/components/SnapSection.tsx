@@ -6,7 +6,7 @@ interface SnapSectionProps extends PropsWithChildren {
 
 export const SnapSection: React.FC<SnapSectionProps> = ({ children, id }) => {
   return (
-    <section id={id} className="h-[100%] snap-start">
+    <section id={id} className="h-[100%] snap-start pt-20">
       {children}
     </section>
   );

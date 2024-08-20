@@ -18,6 +18,8 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--background-rgb);
+  font-family: Nunito, Inter !important;
+  letter-spacing: 0.05rem;
 }
 
 @layer utilities {

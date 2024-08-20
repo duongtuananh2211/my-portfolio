@@ -11,8 +11,8 @@ export const CareerMilestone: React.FC<CareerMilestoneProps> = ({
 }) => {
   return (
     <div>
-      <p className="text-lg font-[500]">{date}</p>
-      <p className="text-base font-[300] tracking-[0.02em]">{desc}</p>
+      <p className="text-lg font-medium">{date}</p>
+      <p className="text-base font-extralight tracking-[0.02em] ">{desc}</p>
     </div>
   );
 };
