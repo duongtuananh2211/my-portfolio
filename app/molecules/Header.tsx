@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
       <HeaderItem title="Career" link="#career" />
       <HeaderItem title="Skills" link="#skills" />
       <HeaderItem title="Projects" link="#projects" />
-      <HeaderItem title="Hobbies" link="#hobbies" />
+      {/* <HeaderItem title="Hobbies" link="#hobbies" /> */}
     </div>
   );
 };

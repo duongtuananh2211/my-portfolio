@@ -24,7 +24,6 @@ export default function Home() {
         <Career />
         <Skills />
         <ListProjects />
-        <Hobbies />
       </div>
     </main>
   );
