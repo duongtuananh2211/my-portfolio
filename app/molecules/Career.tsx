@@ -8,14 +8,14 @@ interface CareerProps {}
 export const Career: React.FC<CareerProps> = ({}) => {
   return (
     <SnapSection id="career">
-      <div className="flex flex-col gap-4">
-        <CareerMilestone date="now" desc="" />
-        <CareerMilestone date="10-2023" desc="Work at Demetio" />
-        <CareerMilestone date="09-2022" desc="Work at Deha" />
-        <CareerMilestone date="04-2020" desc="Work at Agilead Global" />
-        <CareerMilestone date="11-2019" desc="Work at Codegym" />
-        <CareerMilestone date="07-2019" desc="Learned coding at CodeGym" />
-        <CareerMilestone date="11-2001" desc="Hello world" />
+      <div className="flex flex-col gap-8 px-10 mt-14 ">
+        <div className="text-textForeground/40 text-base pl-4">Now</div>
+        <CareerMilestone date="10/2023" desc="Work at Demetio" />
+        <CareerMilestone date="09/2022" desc="Work at Deha" />
+        <CareerMilestone date="04/2020" desc="Work at Agilead Global" />
+        <CareerMilestone date="11/2019" desc="Work at Codegym" />
+        <CareerMilestone date="07/2019" desc="Learned coding at CodeGym" />
+        <CareerMilestone date="11/2001" desc="Hello world" />
       </div>
     </SnapSection>
   );
