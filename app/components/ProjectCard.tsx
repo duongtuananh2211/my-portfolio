@@ -14,11 +14,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
 }) => {
   return (
-    <div>
-      <p>{title}</p>
-      <p>{teamsize} co-workers</p>
-      <p>{techStack.join(", ")}</p>
-      <p>{desc}</p>
+    <div className="relative">
+      <p className="text-xl leading-none font-bold">{title}</p>
+      <div className="mt-1 ">
+        <p className="font-medium">{techStack.join(", ")}</p>
+        <p className="text-textForeground/80">{teamsize} co-workers</p>
+        <p className="text-textForeground/80">{desc}</p>
+      </div>
     </div>
   );
 };

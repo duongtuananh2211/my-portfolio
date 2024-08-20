@@ -7,9 +7,7 @@ interface ListProjectsProps {}
 export const ListProjects: React.FC<ListProjectsProps> = ({}) => {
   return (
     <SnapSection id="projects">
-      <p>List projects</p>
-
-      <div className="flex gap-5 flex-col">
+      <div className="flex gap-6 mt-14 flex-col">
         <ProjectCard
           desc="Printing edit tool"
           teamsize={4}

@@ -6,19 +6,19 @@ interface SkillsProps {}
 export const Skills: React.FC<SkillsProps> = ({}) => {
   return (
     <SnapSection id="skills">
-      <div>Skills</div>
       <div>
-        <p>Javascript</p>
-        <p>5+ years working with Javascript </p>
+        <p>UI programing</p>
+
+        <div className="w-full bg-transparent rounded-full h-2.5 ">
+          <div
+            className="bg-blue-600 h-2.5 rounded-full"
+            style={{ width: "45%" }}
+          ></div>
+        </div>
       </div>
+
       <div>
-        <p>Firestore</p>
-      </div>
-      <div>
-        <p>React</p>
-      </div>
-      <div>
-        <p>Css</p>
+        <p>UI programing</p>
       </div>
     </SnapSection>
   );
