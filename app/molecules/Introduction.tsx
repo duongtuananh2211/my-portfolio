@@ -8,17 +8,29 @@ interface IntroductionProps {}
 export const Introduction: React.FC<IntroductionProps> = ({}) => {
   return (
     <SnapSection id="intro">
-      <div className="flex flex-col">
-        <Avatar />
-        <h1>Hi, I'm Anhdt</h1>
-        <p>Frontend developer at Demetio</p>
-        <Link href={"mailto:duongtuananh2211@gmail.com"}>
-          duongtuananh2211@gmail.com
-        </Link>
-        <Link href={"phoneto:039xxxxxxxxx"}>039xxxxxxxxx</Link>
-        <Link href="https://github.com/duongtuananh2211">
-          github.com/duongtuananh2211
-        </Link>
+      <div className="flex flex-col items-center mt-16 gap-10">
+        <div className="relative w-48 rounded-[100px] overflow-hidden aspect-square shadow-inner border-[3px] border-solid border-textForeground/80">
+          <Avatar />
+        </div>
+        <div className="flex flex-col text-lg leading-normal gap-2">
+          <h1 className="text-2xl tracking-tighter text-textForeground/80">
+            Hi, I'm{" "}
+            <span className="font-bold text-textForeground ">AnhDT</span>
+          </h1>
+          <div className="flex flex-col gap-1">
+            <p>
+              Frontend developer at{" "}
+              <span className="text-textForeground font-bold">Demetio</span>
+            </p>
+            <Link href={"mailto:duongtuananh2211@gmail.com"}>
+              duongtuananh2211@gmail.com
+            </Link>
+            <Link href={"phoneto:039xxxxxxxxx"}>039xxxxxxxxx</Link>
+            <Link href="https://github.com/duongtuananh2211">
+              github.com/duongtuananh2211
+            </Link>
+          </div>
+        </div>
       </div>
     </SnapSection>
   );
