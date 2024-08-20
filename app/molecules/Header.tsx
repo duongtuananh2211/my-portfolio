@@ -51,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
   //   </div>
   // );
   return (
-    <div className="flex justify-end  w-full absolute h-16 items-center px-6">
+    <div className="flex justify-center  w-full absolute h-16 items-center px-6">
       <HeaderItem title="Intro" link="#intro" />
       <HeaderItem title="Career" link="#career" />
       <HeaderItem title="Skills" link="#skills" />
