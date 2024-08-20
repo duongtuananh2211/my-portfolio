@@ -22,7 +22,6 @@ const HeaderItem: React.FC<{ title: string; link: string }> = ({
       href={link}
     >
       {title}
-
       <div
         className={cn(
           "absolute bottom-0 left-0 h-[2px] w-full bg-black hidden ",
