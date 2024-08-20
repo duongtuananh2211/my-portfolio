@@ -15,7 +15,9 @@ export const Introduction: React.FC<IntroductionProps> = ({}) => {
         <div className="flex flex-col text-lg leading-normal gap-2 w-fit">
           <h1 className="text-2xl tracking-tighter text-textForeground/80">
             Hi, I&apos;m{" "}
-            <span className="font-bold text-textForeground ">AnhDT</span>
+            <span className="font-bold text-textForeground underline decoration-wavy decoration-red-700">
+              AnhDT
+            </span>
           </h1>
           <div className="flex flex-col gap-1">
             <p>
