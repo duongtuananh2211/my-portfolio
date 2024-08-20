@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { useActiveSection } from "../stores/active-section";
 import { cn } from "../utils/common";
-import { useTranslations } from "use-intl";
 interface HeaderProps {}
 
 const HeaderItem: React.FC<{ title: string; link: string }> = ({
@@ -35,21 +34,6 @@ const HeaderItem: React.FC<{ title: string; link: string }> = ({
 };
 
 export const Header: React.FC<HeaderProps> = ({}) => {
-  const { activeSection } = useActiveSection();
-  const trans = useTranslations("section");
-
-  // return (
-  //   <div className="  w-full absolute  items-center px-6 ">
-  //     <div className="relative py-5  tracking-[-0.05rem] ">
-  //       <p className=" text-xl relative text-gray-400 font-medium">
-  //         {trans(activeSection)}
-  //       </p>
-  //       <div
-  //         className={cn(" bottom-0 left-0 mt-1 h-[2px] w-20 bg-gray-400  ")}
-  //       ></div>
-  //     </div>
-  //   </div>
-  // );
   return (
     <div className="flex justify-center  w-full absolute h-16 items-center px-6">
       <HeaderItem title="Intro" link="#intro" />
@@ -57,7 +41,6 @@ export const Header: React.FC<HeaderProps> = ({}) => {
       <HeaderItem title="Skills" link="#skills" />
       <HeaderItem title="Projects" link="#projects" />
       <HeaderItem title="Hobbies" link="#hobbies" />
-      {/* <p>{activeSection}</p> */}
     </div>
   );
 };
