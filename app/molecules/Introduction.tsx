@@ -8,7 +8,7 @@ interface IntroductionProps {}
 export const Introduction: React.FC<IntroductionProps> = ({}) => {
   return (
     <SnapSection id="intro">
-      <div className="flex flex-col items-left mt-16 gap-10 md:justify-center md:items-center">
+      <div className="flex flex-col items-left mt-16 gap-10 md:justify-center md:items-center md:mt-24 md:gap-12">
         <div className="relative  w-48 rounded-[100px] mx-auto overflow-hidden aspect-square shadow-inner border-[3px] border-solid border-primary-900 ">
           <Avatar />
         </div>
