@@ -10,7 +10,7 @@ const SkillItem: React.FC<{
   hightlight?: boolean;
 }> = ({ title, percentage, hightlight = false }) => {
   return (
-    <div className="mt-12">
+    <div>
       <div>
         <div className="flex justify-between">
           <p
@@ -44,8 +44,13 @@ const SkillItem: React.FC<{
 
 export const Skills: React.FC<SkillsProps> = ({}) => {
   return (
-    <SnapSection id="skills">
-      <div className="mt-12  pb-8">
+    <SnapSection
+      id="skills"
+      title="Skills"
+      reverse
+      desc="5+ years working with Javascript"
+    >
+      <div className="mt-12 pb-8 flex flex-col gap-12 md:mt-0">
         <SkillItem title="Javascript" hightlight percentage={90} />
         <SkillItem title="React" hightlight percentage={90} />
         <SkillItem title="HTML & CSS" percentage={80} />

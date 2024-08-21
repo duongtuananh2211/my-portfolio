@@ -18,7 +18,7 @@ export default function Home() {
 
       <div
         ref={ref}
-        className="snap-y snap-mandatory h-[100vh]  overflow-y-auto"
+        className="snap-y snap-mandatory h-[100vh]  overflow-y-auto md:snap-none"
       >
         <Introduction />
         <Career />

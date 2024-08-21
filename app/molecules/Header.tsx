@@ -38,12 +38,11 @@ const HeaderItem: React.FC<{ title: string; link: string }> = ({
 
 export const Header: React.FC<HeaderProps> = ({}) => {
   return (
-    <div className="flex justify-center bg-gradient-to-b from-background to-background/0 w-full absolute z-[100] h-16 items-center px-6">
+    <div className="flex justify-center bg-gradient-to-b from-background to-background/0 w-full absolute z-[100] h-16 items-center px-6 md:hidden">
       <HeaderItem title="Intro" link="#intro" />
       <HeaderItem title="Career" link="#career" />
       <HeaderItem title="Skills" link="#skills" />
       <HeaderItem title="Projects" link="#projects" />
-      {/* <HeaderItem title="Hobbies" link="#hobbies" /> */}
     </div>
   );
 };
