@@ -12,7 +12,7 @@ export const Introduction: React.FC<IntroductionProps> = ({}) => {
         <div className="relative  w-48 rounded-[300px] mx-auto overflow-hidden aspect-square shadow-inner border-[3px] border-solid border-primary-900 md:w-72 md:mx-0">
           <Avatar />
         </div>
-        <div className="flex flex-col text-lg text-primary-800  leading-normal gap-2 ">
+        <div className="flex flex-col text-lg text-primary-800  leading-normal gap-2 w-fit mx-auto">
           <h1 className="text-2xl tracking-tighter text-primary-700">
             Hi, I&apos;m{" "}
             <span className="font-bold text-primary-600 underline decoration-wavy decoration-red-900">
