@@ -28,7 +28,7 @@ export const SnapSection: React.FC<SnapSectionProps> = ({
     >
       {title && (
         <div
-          className={cn("w-60 hidden", {
+          className={cn("w-60 hidden md:block", {
             "md:flex md:flex-col md:items-end md:text-right": reverse,
           })}
         >
