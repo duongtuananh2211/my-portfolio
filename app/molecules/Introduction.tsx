@@ -9,10 +9,10 @@ export const Introduction: React.FC<IntroductionProps> = ({}) => {
   return (
     <SnapSection id="intro">
       <div className="flex flex-col items-left mt-16 gap-10 md:justify-center md:items-center">
-        <div className="relative w-48 rounded-[100px] mx-auto overflow-hidden aspect-square shadow-inner border-[3px] border-solid border-textForeground/80 ">
+        <div className="relative  w-48 rounded-[100px] mx-auto overflow-hidden aspect-square shadow-inner border-[3px] border-solid border-textForeground/80 ">
           <Avatar />
         </div>
-        <div className="flex flex-col text-lg leading-normal gap-2 w-fit">
+        <div className="flex flex-col text-lg  leading-normal gap-2 ">
           <h1 className="text-2xl tracking-tighter text-textForeground/80">
             Hi, I&apos;m{" "}
             <span className="font-bold text-textForeground underline decoration-wavy decoration-red-700">
