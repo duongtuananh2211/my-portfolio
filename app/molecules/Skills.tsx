@@ -13,10 +13,16 @@ const SkillItem: React.FC<{
     <div className="mt-12">
       <div>
         <div className="flex justify-between">
-          <p className="text-lg font-medium">{title}</p>
           <p
-            className={cn("text-lg font-bold text-textForeground/50", {
-              "text-textForeground": hightlight,
+            className={cn("text-lg font-medium text-primary-700/80", {
+              "text-primary-600/80": hightlight,
+            })}
+          >
+            {title}
+          </p>
+          <p
+            className={cn("text-lg font-bold text-primary-700", {
+              "text-primary-600": hightlight,
             })}
           >
             {percentage}%
@@ -26,8 +32,8 @@ const SkillItem: React.FC<{
 
       <div className="w-full  bg-textForeground/20 h-2.5 mt-3">
         <div
-          className={cn("bg-textForeground/50 h-2.5 ", {
-            "bg-textForeground": hightlight,
+          className={cn("bg-primary-700 h-2.5 ", {
+            "bg-primary-600": hightlight,
           })}
           style={{ width: `${percentage}%` }}
         ></div>

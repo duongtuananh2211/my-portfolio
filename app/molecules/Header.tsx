@@ -15,15 +15,18 @@ const HeaderItem: React.FC<{ title: string; link: string }> = ({
 
   return (
     <a
-      className={cn("py-4 text-base relative px-2 opacity-50 font-medium", {
-        "opacity-100": isActive,
-      })}
+      className={cn(
+        "py-4 text-base text-primary-600 relative px-2 opacity-50 font-medium",
+        {
+          "opacity-100": isActive,
+        }
+      )}
       href={link}
     >
       {title}
       <div
         className={cn(
-          "absolute bottom-0 left-0 h-[2px] w-full bg-black hidden ",
+          "absolute bottom-0 left-0 h-[2px] w-full bg-primary-600 hidden ",
           {
             block: isActive,
           }

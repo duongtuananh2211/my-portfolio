@@ -15,11 +15,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="relative">
-      <p className="text-xl leading-none font-bold">{title}</p>
+      <p className="text-xl leading-none font-bold text-primary-600">{title}</p>
       <div className="mt-1 ">
-        <p className="font-medium">{techStack.join(", ")}</p>
-        <p className="text-textForeground/80">{teamsize} co-workers</p>
-        <p className="text-textForeground/80">{desc}</p>
+        <p className="font-medium text-primary-700">{techStack.join(", ")}</p>
+        <p className="text-primary-800">{teamsize} co-workers</p>
+        <p className="text-primary-800">{desc}</p>
       </div>
     </div>
   );

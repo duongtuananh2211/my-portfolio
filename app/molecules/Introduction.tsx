@@ -9,13 +9,13 @@ export const Introduction: React.FC<IntroductionProps> = ({}) => {
   return (
     <SnapSection id="intro">
       <div className="flex flex-col items-left mt-16 gap-10 md:justify-center md:items-center">
-        <div className="relative  w-48 rounded-[100px] mx-auto overflow-hidden aspect-square shadow-inner border-[3px] border-solid border-textForeground/80 ">
+        <div className="relative  w-48 rounded-[100px] mx-auto overflow-hidden aspect-square shadow-inner border-[3px] border-solid border-primary-900 ">
           <Avatar />
         </div>
-        <div className="flex flex-col text-lg  leading-normal gap-2 ">
-          <h1 className="text-2xl tracking-tighter text-textForeground/80">
+        <div className="flex flex-col text-lg text-primary-800  leading-normal gap-2 ">
+          <h1 className="text-2xl tracking-tighter text-primary-700">
             Hi, I&apos;m{" "}
-            <span className="font-bold text-textForeground underline decoration-wavy decoration-red-700">
+            <span className="font-bold text-primary-600 underline decoration-wavy decoration-red-900">
               AnhDT
             </span>
           </h1>

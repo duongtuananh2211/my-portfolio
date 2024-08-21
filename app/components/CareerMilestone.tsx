@@ -20,11 +20,11 @@ export const CareerMilestone: React.FC<CareerMilestoneProps> = ({
       )}
     >
       <div className="w-fit relative">
-        <p className="text-xl  font-extralight leading-none tracking-tight text-textForeground/60">
+        <p className="text-xl  font-extralight leading-none tracking-tight text-primary-700">
           {date}
         </p>
       </div>
-      <p className="text-lg leading-none font-medium tracking-[0.02em] mt-2">
+      <p className="text-lg leading-none font-medium tracking-[0.02em] mt-2 text-primary-600">
         {desc}
       </p>
     </div>

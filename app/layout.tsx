@@ -35,7 +35,7 @@ export default async function RootLayout({
 
         <link href="/avatar.jpg" as="image" rel="preload" />
       </head>
-      <body className={inter.className}>
+      <body className={"bg-background text-textForeground"}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

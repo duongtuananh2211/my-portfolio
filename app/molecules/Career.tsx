@@ -20,9 +20,7 @@ export const Career: React.FC<CareerProps> = ({}) => {
   return (
     <SnapSection id="career">
       <div className="flex flex-col gap-10  mt-14 ">
-        <div className="text-textForeground/40 text-xl pl-4 opacity-50">
-          Now
-        </div>
+        <div className="text-primary-700 text-xl pl-4 opacity-50">Now</div>
         {items.map((item, index) => (
           <div
             key={index}
